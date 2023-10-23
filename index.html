@@ -1,0 +1,64 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Smythe&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    </head>
+   
+    <body>
+        <header>
+                <div class="header-container">
+                        <div class="header-title">
+                            <h2>Jimmy’s Diner</h2>
+                            <h4>The best burgers and pizzas in town </h4>
+                        </div>
+                    
+                </div> 
+            
+        </header>
+       
+        <section id="product-section" class="products">         
+                
+        </section>
+       
+        <section class="sell-section">
+                <div  class="order-container">
+                        <h2 id="ty-message" class="ty-message hidden">Thanks! Your order is on its way</h2>
+                        <div id="order-container" class="order-container hidden ">
+                            <p  class="order-text ">Your order</p>
+                            <div id="shopping-car" >  
+                            </div>
+                            
+                            <div class="separator">
+                            </div>
+                            
+                            <div class="total" id="total-price-container">
+                            
+                            </div>
+                            <button class="order-btn" data-complete-order="order">Complete Order</button>
+                        </div>   
+                       
+                </div>
+
+        </section> 
+       
+        <div class="form-container hidden" id="form-container">
+            <form id="pay-form"> 
+                <button class="close-btn" data-close="btn">X</button>
+                <Label> Enter card details</Label>
+                <input class="form-inputs" placeholder="Enter your name" type="name" name="fullname"  required>
+                <input class="form-inputs" placeholder="Enter your card number" type="number" name="card-number" required> 
+                <input class="form-inputs" placeholder="Enter CVV"  type="number" name="cvv" required>
+                <button class="pay-btn" type="submit" data-pay="pay">Pay</button>
+            </form>   
+        </div> 
+        
+        <script src="index.js" type="module"></script>
+    </body> 
+</html>
+
